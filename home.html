@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Baylor Bobertson</title>
+<style>
+    img {
+        width: 20%;
+    }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<script type="text/javascript">
+  var imageURLs = [
+       "./taylor/1.jpeg"
+     , "./taylor/2.png"
+     , "./taylor/3.jpeg"
+     , "./taylor/4.png"
+     , "./taylor/IMG_1031.png"
+     , "./taylor/IMG_8238.PNG"
+     , "./taylor/IMG_9901.png"
+     , "./taylor/IMG_9904.png"
+     , "./taylor/Screenshot 2020-04-06 at 2.04.42 PM.jpeg"
+     , "./taylor/View album “Recents”-1.jpeg"
+     , "./taylor/View album “Recents”.jpeg"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" class=\"center\" alt=\"Taylor\"/>';
+    return img;
+  }
+</script>
+</head>
+<body>
+    <h1 style="text-align: center;">Baylor Bobertson</h1>
+<script type="text/javascript">
+    document.write(getImageTag());
+</script>
+</body>
+</html>
